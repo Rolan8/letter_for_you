@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+}
+
+h1{
+	text-align: center;
+	margin: 0;
+}
+
+.wrapper{
+	background: url('present.jpg') center center;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.text{
+	text-shadow: 0px 1px brown;
+	position: relative;
+	/*color: grey;*/
+	font-style: italic;
+	background-color: rgba(255, 255, 255, .5);
+	max-width: max(50%,600px);
+	font-size: 1.2rem;
+	min-height: 100vh;
+	padding: 10px;
+	padding-top: 1rem;
+	box-sizing: border-box;
+	transform: translateX(-100%);
+	transition: 2s;
+
+	font-family: "Caveat", cursive;
+	  font-optical-sizing: auto;
+	  font-style: normal;
+	  font-size: 1.7rem;
+}
+
+
+.vertisalut{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translate(-50%,-20%) 
+}
+
+.car{
+	display: block;
+	position: absolute;
+	right: -10vw;
+	bottom: 0;
+	transition: 10s;
+	transition-delay: .2s;
+}
+
+body:hover .car{
+	right: 110vw;
+}
+
+
+
+@media(width<900px){
+	.text{
+		max-width: 100%;
+	}
+
+	.vertisalut{
+		position: fixed;
+		width: 120%;
+		top: 40px;
+		/*transform: rotate(-90deg);*/
+	}
+
+}
